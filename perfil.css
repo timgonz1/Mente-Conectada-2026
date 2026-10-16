@@ -1,0 +1,255 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e6e1ee;
+  color: #333333;
+  padding-bottom: 70px;
+}
+
+
+.encabezado {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.campo-busqueda {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  outline: none;
+  width: 200px;
+  background-color: #ffffff;
+}
+
+
+.contenedor-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.titulo-seccion {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #8b2e2e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.seccion-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.caja-foto-perfil {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #8b2e2e;
+  padding: 3px;
+  margin-bottom: 12px;
+}
+
+.caja-foto-perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nombre-usuario {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #8b2e2e;
+}
+
+.fecha-miembro {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.boton-editar {
+  background-color: #e3b0b6;
+  color: #8b2e2e;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.tarjeta-resumen {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.bloque-estado {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.emoji-sol {
+  font-size: 2.2rem;
+}
+
+.texto-estado {
+  font-size: 0.85rem;
+  color: #444444;
+}
+
+.texto-estado strong {
+  display: block;
+  color: #222222;
+  font-size: 0.9rem;
+}
+
+.fila-estadistica {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.valor-estadistica {
+  font-weight: 600;
+  color: #222222;
+}
+
+
+.seccion-configuracion {
+  width: 100%;
+  max-width: 600px;
+}
+
+.subtitulo {
+  font-family: 'Playfair Display', serif;
+  color: #8b2e2e;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.lista-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opcion-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.texto-opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flecha {
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.menu-inferior {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e6e1ee;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.item-menu {
+  text-align: center;
+  color: #666666;
+  font-size: 0.75rem;
+}
+
+.icono-casa {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto 3px auto;
+  object-fit: contain;
+}
+
+.item-menu span {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.item-menu.activo {
+  color: #8b2e2e;
+  font-weight: 600;
+}
+
+.menu-inferior a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-inferior a:visited {
+  color: inherit;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-inferior {
+    display: flex;
+  }
+
+  .campo-busqueda {
+    width: 140px;
+  }
+}
