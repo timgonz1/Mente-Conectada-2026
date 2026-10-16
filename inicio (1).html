@@ -1,32 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../Css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MenteConectada - Inicio</title>
+
+  <link rel="stylesheet" href="../Css/inicio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <main>
-        <h4>Mente Conectada</h4>
-        <p></p>
-        <p></p>
-        <h2>Hola,Elena.</h2>
-        <h2>¿Como te encuentras hoy?</h2>
-        <a href="../html/inciosesion.html">
-        <button class="Inicio"> INICIAR SESION</button>
-        </a>
-        <p></p>
-        <a href="../html/registro.html">
-            <button class="registro">REGISTRARSE</button>
-        </a>
-    </main>
 
+  
+  <div class="encabezado">
+    <div class="logo">MenteConectada</div>
+    <input type="text" class="campo-busqueda" placeholder="Buscar...">
+    <a href="perfil.html">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Perfil" class="imagen-perfil">
+    </a>
+  </div>
+
+  
+  <div class="contenedor-principal">
 
     
+    <div class="seccion-bienvenida">
+      <div class="texto-bienvenida">
+        <h1>Hola, Elena.<br>¿Cómo te sientes hoy?</h1>
+        <p>Tómate un momento para conectar contigo misma y registrar tu energía.</p>
+        <button class="boton-progreso">Ver mi progreso semanal</button>
+      </div>
+      <div class="caja-imagen-bienvenida">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Meditación">
+      </div>
+    </div>
+
+    
+    <div class="estado-animo">
+      <h2>Tu estado de ánimo</h2>
+      <div class="opciones-animo">
+        <span class="etiqueta-animo">✨ Radiante</span>
+        <span class="etiqueta-animo">💭 Angustiada</span>
+        <span class="etiqueta-animo">🍃 Calmada</span>
+        <span class="etiqueta-animo">🥱 Cansada</span>
+      </div>
+    </div>
+
+    
+    <div class="contenedor-tarjetas">
+      <div class="tarjeta">
+        <h3>Meditación guiada</h3>
+        <p>10 minutos de respiración consciente para reducir los niveles de cortisol y encontrar el equilibrio interior.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Diario de emociones</h3>
+        <p>Escribe tus emociones. Expresar lo que sientes mejora el bienestar y aclara tus pensamientos.</p>
+      </div>
+    </div>
+
+    
+    <div class="cita-motivacional">
+      <p>"Tu salud mental no es el destino, sino el proceso. Se trata de cómo conduces, no de adónde vas."</p>
+    </div>
+
+    
+    <div class="seccion-recomendados">
+      <h2>Recomendado para ti</h2>
+      <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Atardecer">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=400&q=80" alt="Piedras zen">
+        <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=400&q=80" alt="Naturaleza">
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="menu-inferior">
+    <div class="item-menu activo">
+      <a href="inicio.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Inicio" class="icono-casa">
+        <p>Inicio</p>
+      </a>
+    </div>
+    <div class="item-menu">
+      <a href="exploracion-medi.html">
+        <span>🧩</span>
+        <p>Explorar</p>
+      </a>
+    </div>
+    <div class="item-menu">
+      <a href="progreso.html">
+        <span>📈</span>
+        <p>Progreso</p>
+      </a>
+    </div>
+    <div class="item-menu">
+      <a href="perfil.html">
+        <span>👤</span>
+        <p>Perfil</p>
+      </a>
+    </div>
+  </div>
 
 </body>
-
 </html>
