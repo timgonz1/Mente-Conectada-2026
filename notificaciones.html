@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Notificaciones - MenteConectada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/notificaciones.css">
+</head>
+<body>
+
+  <main class="pantalla">
+
+    <header class="encabezado">
+      <span class="logo">MenteConectada</span>
+      <input type="search" class="buscador" placeholder="Buscar" aria-label="Buscar">
+    </header>
+
+    <section class="presentacion">
+      <h1>Elena Ruiz</h1>
+      <div class="foto">
+        <img src="../imagenes/elenaruiz.jpg" alt="Foto de Elena Ruiz">
+      </div>
+    </section>
+
+    <h2 class="titulo-notificaciones">Notificaciones</h2>
+
+    <section class="tarjeta-notificaciones">
+
+      <div class="opcion opcion-recordatorios">
+        <div class="texto-opcion">
+          <label for="recordatorios" class="etiqueta">Recordatorios</label>
+          <p>recibir recordatorios ocasionales.</p>
+        </div>
+        <input type="checkbox" id="recordatorios" class="interruptor" checked>
+      </div>
+
+      <div class="opcion opcion-selector">
+        <label for="tono" class="etiqueta">Tono de notificación</label>
+        <select id="tono" class="selector">
+          <option value="alpha">predeterminado (Alpha)</option>
+          <option value="suave">Suave</option>
+          <option value="clasico">Clásico</option>
+          <option value="ninguno">Sin sonido</option>
+        </select>
+      </div>
+
+      <div class="opcion opcion-selector">
+        <label for="vibracion" class="etiqueta">Vibración</label>
+        <select id="vibracion" class="selector">
+          <option value="predeterminado">predeterminado</option>
+          <option value="activada">Activada</option>
+          <option value="desactivada">Desactivada</option>
+        </select>
+      </div>
+
+      <div class="opcion opcion-notificacion">
+        <label for="notificacion" class="etiqueta">Notificación</label>
+        <input type="checkbox" id="notificacion" class="interruptor" checked>
+      </div>
+
+    </section>
+
+    <a href="perfil.html" class="volver">Volver atrás</a>
+
+  </main>
+  <aside class="barralateral">
+
+    <div class="menu-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="icono-casa" alt="">
+      <p>Inicio</p>
+    </div>
+
+    <a href="explorar.html" class="menu-item">
+      <span class="icono">🧩</span>
+      <span class="text">Explorar</span>
+    </a>
+
+    <a href="progreso.html" class="menu-item">
+      <span class="icono">📈</span>
+      <span class="text">Progreso</span>
+    </a>
+
+    <a href="perfil.html" class="menu-item activo">
+      <span class="icono">👤</span>
+      <span class="text">Perfil</span>
+    </a>
+
+  </aside>
+
+</body>
+</html>
