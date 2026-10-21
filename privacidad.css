@@ -7,90 +7,90 @@
 
 html {
   min-height: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
   min-height: 100vh;
-  min-height: 100dvh;
   font-family: 'Mulish', sans-serif;
   background-color: #E2E6EC;
   color: #000;
   overflow-x: hidden;
-  padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+  padding-bottom: 90px;
 }
+
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../imagenes/fondo.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.5;
+  z-index: -1;
 }
 
 .pantalla {
   width: 100%;
-  max-width: 430px;
+  max-width: 480px;
   min-height: 100vh;
-  min-height: 100dvh;
   margin: 0 auto;
-  padding: 30px 16px 110px;
+  padding: 35px 22px 120px;
 }
 
 .encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 28px;
 }
 
 .logo {
-  font-family: 'Mulish', sans-serif;
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 400;
   color: #29232D;
   white-space: nowrap;
 }
 
 .buscador {
-  width: 43%;
-  max-width: 180px;
-  min-width: 100px;
-  height: 32px;
-  padding: 6px 15px;
+  width: 45%;
+  max-width: 210px;
+  min-width: 120px;
+  height: 42px;
+  padding: 8px 15px;
   border: none;
-  border-radius: 24px;
-  outline: none;
-  background: #fff;
+  border-radius: 25px;
+  background-color: #fff;
   font-family: 'Mulish', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
 }
 
 .buscador::placeholder {
   color: #B8B8B8;
 }
+
 .presentacion {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 15px;
   width: 100%;
   padding: 0 5px;
-  margin-bottom: 13px;
+  margin-bottom: 22px;
 }
 
 .presentacion h1 {
   flex: 1;
   min-width: 0;
   font-family: 'Playfair Display', serif;
-  font-size: clamp(27px, 7vw, 36px);
-  font-weight: 700;
-  line-height: 1.12;
+  font-size: 39px;
+  font-weight: bold;
+  line-height: 1.15;
   color: #912E2E;
   overflow-wrap: break-word;
 }
@@ -100,53 +100,49 @@ body::before {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  width: 124px;
-  height: 124px;
+  width: 135px;
+  height: 135px;
   padding: 3px;
   border: 3px solid #87439A;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
   overflow: hidden;
 }
 
 .foto img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
   border-radius: 50%;
 }
 
 .titulo-privacidad {
-  margin: 0 0 17px 5px;
+  margin: 0 0 22px 5px;
   font-family: 'Playfair Display', serif;
-  font-size: 27px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: bold;
   line-height: 1.25;
   color: #000;
 }
 
 .tarjeta-privacidad {
-  display: block;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.94);
+  background-color: rgba(255, 255, 255, 0.94);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
-
 
 .opcion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-height: 60px;
-  padding: 14px 10px;
+  min-height: 75px;
+  padding: 18px 15px;
   border-bottom: 1px solid #555;
 }
 
@@ -156,70 +152,60 @@ body::before {
 
 .opcion p {
   font-family: 'Mulish', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 .etiqueta {
   color: #A92E2E;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .valor {
-  margin-left: 4px;
+  margin-left: 5px;
   color: #29232D;
-  font-weight: 400;
 }
 
 .opcion-cuenta {
-  min-height: 65px;
+  min-height: 80px;
   justify-content: center;
 }
 
 .descripcion {
   color: #858087;
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.5;
 }
+
 .volver {
   display: block;
   width: 100%;
-  min-height: 43px;
-  margin: 33px auto 0;
-  padding: 12px 13px;
+  min-height: 55px;
+  margin: 35px auto 0;
+  padding: 15px;
   border: none;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.96);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.96);
   color: #000;
   text-align: left;
   font-family: 'Mulish', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
+
 .barralateral {
   position: fixed;
-  z-index: 100;
   left: 0;
-  right: 0;
   bottom: 0;
-
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
   width: 100%;
-  max-width: none;
-
-  height: calc(58px + env(safe-area-inset-bottom, 0px));
-  padding: 4px 8px env(safe-area-inset-bottom, 0px);
-
-  background: rgba(255, 255, 255, 0.24);
+  height: 85px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-top: 1px solid rgba(104, 100, 108, 0.18);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 }
 
 .menu-item {
@@ -228,111 +214,167 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
-
+  gap: 5px;
   height: 100%;
-  min-width: 0;
-
   color: #29232D;
   font-family: 'Mulish', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: normal;
   text-align: center;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-item a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .menu-item .icono,
 .menu-item .icono-casa {
-  display: block;
-  width: 19px;
-  height: 19px;
-  flex-shrink: 0;
+  width: 27px;
+  height: 27px;
 }
 
-.menu-item span {
-  font-size: 11px;
-  line-height: 15px;
-}
-
+.menu-item span,
 .menu-item p {
   margin: 0;
-  font-size: 11px;
-  line-height: 15px;
+  color: #29232D;
+  font-size: 13px;
+  line-height: 17px;
+  text-decoration: none;
 }
 
-/* PANTALLAS PEQUEÑAS*/
-
-@media (max-width: 360px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .pantalla {
-    padding: 24px 12px 100px;
+    max-width: 850px;
+    padding: 40px 35px 130px;
   }
 
   .encabezado {
-    margin-bottom: 22px;
+    gap: 20px;
+    margin-bottom: 40px;
   }
 
   .logo {
-    font-size: 14px;
+    font-size: 27px;
+  }
+
+  .buscador {
+    width: 40%;
+    max-width: 300px;
+    height: 45px;
+    font-size: 16px;
   }
 
   .presentacion {
-    padding: 0 4px;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .presentacion h1 {
-    font-size: 25px;
+    font-size: 48px;
   }
 
   .foto {
-    width: 100px;
-    height: 100px;
+    width: 155px;
+    height: 155px;
   }
 
   .titulo-privacidad {
-    font-size: 24px;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .tarjeta-privacidad {
+    border-radius: 15px;
   }
 
   .opcion {
-    padding: 12px 9px;
+    min-height: 90px;
+    padding: 22px 25px;
+  }
+
+  .opcion p {
+    font-size: 18px;
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+
+  .opcion-cuenta {
+    min-height: 100px;
+  }
+
+  .volver {
+    min-height: 65px;
+    margin-top: 35px;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .barralateral {
+    height: 95px;
+    padding: 10px 20px;
+  }
+
+  .menu-item {
+    gap: 7px;
+    font-size: 16px;
+  }
+
+  .menu-item .icono,
+  .menu-item .icono-casa {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-item span,
+  .menu-item p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .pantalla {
+    padding: 25px 14px 110px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .presentacion h1 {
+    font-size: 29px;
+  }
+
+  .foto {
+    width: 105px;
+    height: 105px;
+  }
+
+  .titulo-privacidad {
+    font-size: 27px;
   }
 
   .opcion p,
   .descripcion {
-    font-size: 11px;
+    font-size: 12px;
   }
 
-  .volver {
-    margin-top: 27px;
+  .menu-item .icono,
+  .menu-item .icono-casa {
+    width: 23px;
+    height: 23px;
   }
 
   .menu-item span,
   .menu-item p {
     font-size: 10px;
-  }
-}
-@media (min-width: 440px) and (max-width: 600px) {
-
-  .user-presentation {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 120px;
-    align-items: center;
-    justify-content: initial;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .user-title-name {
-    font-size: clamp(1.8rem, 6.5vw, 2.7rem);
-    white-space: nowrap;
-    word-break: normal;
-    overflow-wrap: normal;
-    letter-spacing: -1.2px;
-    min-width: 0;
-  }
-
-  .profile-photo-wrapper {
-    width: 120px;
-    height: 120px;
-    min-width: 120px;
-    justify-self: end;
   }
 }
