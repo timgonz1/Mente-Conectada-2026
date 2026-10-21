@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Configuración - MenteConectada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/configuracion.css">
+</head>
+
+<body>
+  <main class="pantalla">
+
+    <header class="encabezado">
+      <span class="logo">MenteConectada</span>
+      <input type="search" class="buscador" placeholder="Buscar" aria-label="Buscar">
+    </header>
+
+    <section class="presentacion">
+      <h1>Elena Ruiz</h1>
+      <div class="foto">
+        <img src="../imagenes/elenaruiz.jpg" alt="Foto de Elena Ruiz">
+      </div>
+    </section>
+
+    <h2 class="titulo-configuracion">Configuración</h2>
+
+    <section class="tarjeta-configuracion">
+
+      <div class="opcion">
+        <label for="modo" class="etiqueta">Modo visual:</label>
+        <select id="modo" class="control">
+          <option value="claro">Claro</option>
+          <option value="oscuro">Oscuro</option>
+        </select>
+      </div>
+
+      <div class="opcion">
+        <label for="idioma" class="etiqueta">Idioma principal:</label>
+        <select id="idioma" class="control">
+          <option value="es">Español / Colombia</option>
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+
+      <div class="opcion">
+        <label for="zona" class="etiqueta">Zona horaria y fechas:</label>
+        <select id="zona" class="control">
+          <option value="colombia">Colombia / 24 h / hoy</option>
+          <option value="mexico">México</option>
+          <option value="madrid">Madrid</option>
+          <option value="utc">UTC</option>
+        </select>
+      </div>
+
+      <div class="opcion">
+        <label for="fuente" class="etiqueta">Tamaño de la fuente:</label>
+        <select id="fuente" class="control control-fuente">
+          <option value="normal">Aa — Normal</option>
+          <option value="grande">Aa — Grande</option>
+          <option value="pequena">Aa — Pequeña</option>
+        </select>
+      </div>
+
+      <div class="opcion opcion-cache">
+        <label for="cache" class="etiqueta">Limpiar datos de caché</label>
+        <input type="checkbox" id="cache" class="control-cache" aria-label="Seleccionar limpieza de caché">
+      </div>
+
+      <div class="opcion">
+        <label for="disponibilidad" class="etiqueta">Disponibilidad:</label>
+        <select id="disponibilidad" class="control">
+          <option value="tarde">Tarde / 1pm - 5pm</option>
+          <option value="manana">Mañana / 8am - 12pm</option>
+          <option value="noche">Noche / 6pm - 10pm</option>
+          <option value="todo">Todo el día</option>
+        </select>
+      </div>
+
+    </section>
+
+    <a href="perfil.html" class="volver">Volver atrás</a>
+
+  </main>
+
+  <!-- MENÚ INFERIOR -->
+  <aside class="barralateral">
+
+    <div class="menu-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="icono-casa" alt="">
+      <p>Inicio</p>
+    </div>
+
+    <a href="explorar.html" class="menu-item">
+      <span class="icono">🧩</span>
+      <span class="text">Explorar</span>
+    </a>
+
+    <a href="progreso.html" class="menu-item">
+      <span class="icono">📈</span>
+      <span class="text">Progreso</span>
+    </a>
+
+    <a href="perfil.html" class="menu-item activo">
+      <span class="icono">👤</span>
+      <span class="text">Perfil</span>
+    </a>
+
+  </aside>
+</body>
+</html>
