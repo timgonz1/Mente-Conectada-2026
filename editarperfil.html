@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>Editar Perfil - MenteConectada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/editarperfil.css">
+</head>
+
+<body>
+
+  <main class="pantalla">
+    <header class="encabezado">
+      <span class="logo">MenteConectada</span>
+
+      <input
+        type="search"
+        class="buscador"
+        placeholder="Buscar"
+        aria-label="Buscar"
+      >
+    </header>
+    <section class="presentacion">
+
+      <h1>Elena Ruiz</h1>
+
+      <div class="foto">
+        <img src="../imagenes/elenaruiz.jpg" alt="Foto de Elena Ruiz">
+      </div>
+
+    </section>
+    <h2>Editar Perfil</h2>
+    <form class="tarjeta">
+
+      <div class="fila-foto">
+
+        <label class="etiqueta">Foto de perfil:</label>
+
+        <div class="foto-edicion">
+
+          <div class="miniatura" id="miniatura">
+            <img src="../imagenes/elenaruiz.jpg" alt="Foto de Elena Ruiz">
+          </div>
+
+          <div class="botones-foto">
+            <button type="button">Cambiar</button>
+            <button type="button">Borrar</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="fila">
+        <label for="nombre">Nombre completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          value="Elena Ruiz Zapata"
+        >
+      </div>
+
+      <div class="fila">
+        <label for="usuario">Nombre de Usuario:</label>
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+        >
+      </div>
+      <div class="fila">
+        <label for="biografia">Presentación o biografía:</label>
+        <textarea
+          id="biografia"
+          name="biografia"
+          rows="2"
+        ></textarea>
+      </div>
+
+      <div class="fila">
+        <label for="enlaces">Enlace web y sitios web:</label>
+        <input
+          type="text"
+          id="enlaces"
+          name="enlaces"
+        >
+      </div>
+
+    </form>
+
+    <button
+      class="volver"
+      type="button"
+    >
+      Volver a atrás
+    </button>
+
+    <aside class="barralateral">
+
+      <div class="menu-item">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+          class="icono-casa"
+          alt=""
+        >
+        <p>Inicio</p>
+      </div>
+
+      <div class="menu-item">
+        <span class="icono">🧩</span>
+        <span class="text">Explorar</span>
+      </div>
+
+      <div class="menu-item">
+        <span class="icono">📈</span>
+        <span class="text">Progreso</span>
+      </div>
+
+      <div class="menu-item activo">
+        <span class="icono">👤</span>
+        <span class="text">Perfil</span>
+      </div>
+
+    </aside>
+
+  </main>
+
+</body>
+</html>
