@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MenteConectada - Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Css/inicio.css">
+</head>
+<body>
+
+    <nav class="menu-lateral">
+    <div class="item-menu-lat activo">
+      <a href="inicio.html">
+        <span><img src="../imagenes/casa.png" alt="" class=""></span>
+        <p>Inicio</p>
+      </a>
+    </div>
+    <div class="item-menu-lat">
+      <a href="exploracion-medi.html  ">
+        <span><img src="../imagenes/brujula.png" alt="" class=""></span>
+        <p>Explorar</p>
+      </a>
+    </div>
+    <div class="item-menu-lat">
+      <a href="progreso.html">
+        <span><img src="../imagenes/progreso.png" alt="" class=""></span>
+        <p>Progreso</p>
+      </a>
+    </div>
+    <div class="item-menu-lat">
+      <a href="perfil.html">
+        <span><img src="../imagenes/perfil.png" alt="" class=""></span>
+        <p>Perfil</p>
+      </a>
+    </div>
+  </nav>
+
+    <div class="pagina-principal">
+    
+    <div class="encabezado">
+      <div class="logo">MenteConectada</div>
+      <div class="buscador-perfil">
+        <input type="text" class="campo-busqueda" placeholder="Buscar...">
+        <a href="perfil.html">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Perfil" class="avatar-header">
+        </a>
+      </div>
+    </div>
+
+    <div class="contenedor-contenido">
+            <div class="seccion-bienvenida-banner">
+        <div class="texto-bienvenida">
+          <h1>Hola, Elena.<br>¿Cómo te sientes hoy?</h1>
+          <p>Tómate un momento para conectar contigo misma y registrar tu energía.</p>
+          <a href="progreso.html" class="btn-progreso-semanal">Ver mi progreso semanal</a>
+        </div>
+        <div class="imagen-banner">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Meditación">
+        </div>
+      </div>
+
+            <div class="seccion-animo">
+  <h3>Tu estado de ánimo</h3>
+  <div class="opciones-animo">
+    <button type="button" class="etiqueta-animo" onclick="seleccionarAnimo(this)">✨ Radiante</button>
+    <button type="button" class="etiqueta-animo" onclick="seleccionarAnimo(this)">☁️ Angustiada</button>
+    <button type="button" class="etiqueta-animo" onclick="seleccionarAnimo(this)">🍃 Calmada</button>
+    <button type="button" class="etiqueta-animo" onclick="seleccionarAnimo(this)">😴 Cansada</button>
+  </div>
+  <p id="mensaje-animo" style="margin-top: 10px; font-size: 0.85rem; color: #8B263E; font-weight: 500;"></p>
+</div>
+
+            <div class="grilla-tarjetas-inicio">
+        <div class="tarjeta-opcion">
+          <h3>Meditación guiada</h3>
+          <p>10 minutos de respiración consciente para reducir los niveles de cortisol y encontrar el equilibrio interior.</p>
+        </div>
+        <div class="tarjeta-opcion">
+          <h3>Diario de emociones</h3>
+          <p>Escribe tus emociones. Expresar lo que sientes mejora el bienestar y aclara tus pensamientos.</p>
+        </div>
+      </div>
+
+            <div class="frase-motivacional">
+        <p>"Tu salud mental no es el destino, sino el proceso. Se trata de cómo conduces, no de adónde vas."</p>
+      </div>
+
+      <div class="seccion-recomendados">
+  <h3>Recomendado para ti</h3>
+
+  <div class="contenedor-carrusel">
+        <button class="btn-carrusel izq" onclick="moverCarrusel(-1)">&#10094;</button>
+
+        <div class="carrusel-pista" id="carrusel">
+      <div class="tarjeta-rec">
+        <img src="https://images.unsplash.com/photo-1598826739205-d09823c3bc3d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Paisaje relajante  ">
+      </div>
+
+        <div class="tarjeta-rec">
+        <img src="https://images.unsplash.com/photo-1604251405903-b8c4e83cdf7c?q=80&w=1488&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Árbol">
+      </div>
+
+      <div class="tarjeta-rec">
+        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=500&q=80" alt="Árbol">
+      </div>
+
+      <div class="tarjeta-rec">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80" alt="Montañas">
+      </div>
+
+      <div class="tarjeta-rec">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=500&q=80" alt="Meditación">
+      </div>
+    </div>
+
+        <button class="btn-carrusel der" onclick="moverCarrusel(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  function moverCarrusel(direccion) {
+    const carrusel = document.getElementById('carrusel');
+    carrusel.scrollBy({
+      left: direccion * 320,
+      behavior: 'smooth'
+    });
+  }
+</script>
+</body>
+</html>

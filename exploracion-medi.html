@@ -26,22 +26,22 @@
   
   <div class="contenedor-principal">
 
-    
-    <div class="seccion-titulo-explorar">
-      <h1 class="titulo-explorar">EXPLORA RECURSOS</h1>
-      <div class="opciones-categorias">
-        <span class="etiqueta-categoria">VIDEOS</span>
-        <span class="etiqueta-categoria">TEXTOS</span>
-        <span class="etiqueta-categoria">PUBLICACIONES</span>
-        <span class="etiqueta-categoria">SONIDOS</span>
-        <span class="etiqueta-categoria activa">MEDITACIÓN</span>
-      </div>
-    </div>
+    <div class="seccion-explorar-header">
+  <h2>Explorar recursos</h2>
+  
+    <div class="contenedor-filtros">
+    <button class="btn-filtro" onclick="filtrarSeccion('videos', this)">VIDEOS</button>
+    <button class="btn-filtro" onclick="filtrarSeccion('textos', this)">TEXTOS</button>
+    <button class="btn-filtro" onclick="filtrarSeccion('publicaciones', this)">PUBLICACIONES</button>
+    <button class="btn-filtro" onclick="filtrarSeccion('sonidos', this)">SONIDOS</button>
+    <button class="btn-filtro activo" onclick="filtrarSeccion('meditacion', this)">MEDITACIÓN</button>
+  </div>
+</div>
 
   
     <div class="tarjeta-recurso-principal">
       <div class="caja-imagen-recurso">
-        <img src="om.jpeg" alt="">
+        <img src="../imagenes/bata.jpg" alt="">
       </div>
       <div class="contenido-recurso">
         <h2>Meditacion guiada avanzada de 20 minutos</h2>
@@ -57,7 +57,7 @@
         
         <div class="tarjeta-recurso">
           <div class="caja-imagen-corta">
-            <img src="https://images.unsplash.com/photo-1511295742362-92c96b124e52?auto=format&fit=crop&w=500&q=80" alt="Meditación para dormir">
+            <img src="../imagenes/meditacion para.jpg" alt="Meditación para dormir">
           </div>
           <div class="contenido-recurso">
             <h3>Meditacion para dormir</h3>
@@ -79,7 +79,7 @@
       <div class="columna-recursos">
         <div class="tarjeta-recurso tarjeta-alta">
           <div class="caja-imagen-alta">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=500&q=80" alt="Naturaleza y río">
+            <img src="../imagenes/naturaleza.jpg" alt="Naturaleza y río">
           </div>
           <div class="contenido-recurso">
             <h3>Textos para identificarme</h3>
@@ -97,32 +97,32 @@
   </div>
 
   
-  <div class="menu-inferior">
-    <div class="item-menu">
+  <nav class="menu-lateral">
+    <div class="item-menu-lat activo">
       <a href="inicio.html">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Inicio" class="icono-casa">
+        <span><img src="../imagenes/casa.png" alt="" class=""></span>
         <p>Inicio</p>
       </a>
     </div>
-    <div class="item-menu activo">
-      <a href="explorar.html">
-        <span>🧩</span>
+    <div class="item-menu-lat">
+      <a href="exploracion-medi.html  ">
+        <span><img src="../imagenes/brujula.png" alt="" class=""></span>
         <p>Explorar</p>
       </a>
     </div>
-    <div class="item-menu">
+    <div class="item-menu-lat">
       <a href="progreso.html">
-        <span>📈</span>
+        <span><img src="../imagenes/progreso.png" alt="" class=""></span>
         <p>Progreso</p>
       </a>
     </div>
-    <div class="item-menu">
+    <div class="item-menu-lat">
       <a href="perfil.html">
-        <span>👤</span>
+        <span><img src="../imagenes/perfil.png" alt="" class=""></span>
         <p>Perfil</p>
       </a>
     </div>
-  </div>
+  </nav>
 
 </body>
 </html>
